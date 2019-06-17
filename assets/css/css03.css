@@ -1,0 +1,38 @@
+nav{
+  height: 150px;
+  width: 100%;
+  background-color: #1a1a1a;
+}
+img{
+  display: block;
+  margin-left: 50px;
+  float: left;
+}
+section{
+  height: 850px;
+}
+footer{
+  height: 50px;
+  width: 100%;
+  background-color: black;
+}
+p{
+  text-align: center;
+  color: #e86435;
+}
+#menu ul li {
+  display : inline;
+  background-color: #1a1a1a;
+  color: #e86435;
+  width: 100px;
+  height: 150px;
+  text-align: center;
+  float: right;
+  margin-right: 100px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#menu ul li:hover{
+  background-color: #e86435;
+  color: #1a1a1a;
+}
