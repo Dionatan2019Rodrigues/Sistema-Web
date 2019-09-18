@@ -14,15 +14,19 @@ h1{
   color: #1a1a1a;
 }
 footer{
-  height: 50px ;
+  height: 110px ;
   width : 100% ;
-  background-color: black ;
+  background-color: #1a1a1a ;
   color: #e86435;
   margin-bottom: 0px;
 }
 p {
   text-align : center ;
   color : #1a1a1a ;
+}
+#footer{
+  color: white;
+  margin-top: 10px;
 }
 #menu  a {
   display : inline ;
