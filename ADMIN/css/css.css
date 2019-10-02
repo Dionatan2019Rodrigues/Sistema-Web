@@ -3,6 +3,9 @@ nav{
   width: 100%;
   background-color: #1a1a1a ;
 }
+a{
+  margin-left: 25px;
+}
 #logo {
   display : block ;
   height: 100px ;
@@ -14,10 +17,15 @@ h1{
   color: #1a1a1a;
 }
 footer{
-  height: 50px ;
+  height: 110px ;
   width : 100% ;
-  background-color: black ;
+  background-color: #1a1a1a ;
   color: #e86435;
+  margin-bottom: 0px;
+}
+#footer{
+  color: white;
+  margin-top: 10px;
 }
 p {
   text-align : center ;
@@ -37,7 +45,7 @@ i{
   margin-right: 100px ;
   margin-top : auto	 ;
   margin-bottom : auto ;
-  
+
 }
 #menu  a:hover {
   background-color : #e86435 ;
@@ -62,9 +70,9 @@ a{
 	width:80%;
 	height:90%;
 	float: right;
-	
-	
-	
+
+
+
 }
 .tam{
   height: 96%;
