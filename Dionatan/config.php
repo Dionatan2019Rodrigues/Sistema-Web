@@ -5,7 +5,7 @@
 unset($config);
 $config = new stdClass();
 $config->defaultClass = "Home";
-$config->base_url = '/Primeiro2019';
+$config->base_url = '/Primeiro2019/Dionatan/';
 $config->url = 'http://'.$_SERVER['HTTP_HOST']. $config->base_url;
 $config->asset = $config->base_url . 'view/templates/';
 $config->template = 'default';
