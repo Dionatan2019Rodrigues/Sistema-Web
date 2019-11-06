@@ -1,16 +1,15 @@
-<! DOCTYPE html>
 <html  lang = " en "  dir = " ltr ">
   <head>
     <meta  charset = " utf-8 ">
     <title > Admin </title>
-    <link  rel = "stylesheet"  type="text/css"  href = "css/css.css ">
-    <link  rel = "icon"  type="img/png"  href = "img/icon.png "/>
+    <link  rel = "stylesheet"  type="text/css"  href = "<?php echo $this->asset ?>css/css.css ">
+    <link  rel = "icon"  type="img/png"  href = "<?php echo $this->asset ?>img/icon.png "/>
   </head>
   <body>
     <header>
     <nav  id = "menu">
 
-       <img  id = "logo"  src = "img/icon.png"  alt=""/>
+       <img  id = "logo"  src = "<?php echo $this->asset ?>img/icon.png"  alt=""/>
 
     </nav>
   </header>
@@ -18,7 +17,7 @@
 
   <section class="tudo">
 
-	 <form action="Admin.html" style="margin-top:15%;margin-bottom:15%; margin-left:30%;margin-right:30%;">
+	 <form action="<?php echo $this->url ?>Admin" style="margin-top:15%;margin-bottom:15%; margin-left:30%;margin-right:30%;">
 	    <input type="text" placeholder="email">
 		<input type="password" placeholder="senha">
 		<input type="submit" value="Entrar">
@@ -31,5 +30,5 @@
      <p id="footer"> Email para contato | dionatanrodrigues351@gmail.com </p>
   </footer>
   </body>
-  <script  type="text/javascript" src="js/js.js"> </script>
+  <!--<script  type="text/javascript" src="js/js.js"> </script>-->
 </html>
