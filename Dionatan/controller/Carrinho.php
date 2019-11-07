@@ -1,5 +1,5 @@
 <?php
-class Home extends Controller{
+class Carrinho extends Controller{
 
     private $texto;
 

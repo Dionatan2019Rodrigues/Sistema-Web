@@ -1,10 +1,11 @@
 <?php
-class Login extends Controller{
+class Aedit extends Controller{
 
     private $texto;
 
     public function __construct() {
         parent::__construct();
+        $this->view->setTemplate('Admin');
 
     }
 
@@ -12,7 +13,7 @@ class Login extends Controller{
 
         $this->view->load('header');
         $this->view->load('nav');
-        $this->view->load('login');
+        $this->view->load('edit');
         $this->view->load('footer');
     }
 

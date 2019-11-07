@@ -1,5 +1,5 @@
 <?php
-class Home extends Controller{
+class Cardapio extends Controller{
 
     private $texto;
 

@@ -1,6 +1,6 @@
-<div class="direita">
+	 <div class="direita">
 
-		<img src="img/Semt.png" width="75%" >
+		<img src="<?php echo $this->asset ?>img/Semt.png" width="75%" >
 
 	 </div>
 
