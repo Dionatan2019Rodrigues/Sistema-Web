@@ -1,7 +1,7 @@
       <div id="Login">
         <div class="tam"></div>
         <img src="<?php echo $this->asset ?>img/login.jpg" height="110px"/>
-        <form action="index.html" method="POST">
+        <form action="<?php echo $this->url ?>Home" method="POST">
           <div class="tam"></div>
           <input type="text" name="login" placeholder="Login">
           <input type="password" name="senha" placeholder="Senha"/>

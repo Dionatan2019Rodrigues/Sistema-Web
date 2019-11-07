@@ -7,22 +7,22 @@
         <img  src="<?php echo $this->asset ?>img/prod01.jpg " height="200px" width="250px"/>
         <span>Salame asiático</span><br/>
         <span>R$ 56,00</span>
-        <form action="<?php echo $this->url?>card">
+        <form action="<?php echo $this->url?>Cardapio">
            <input type="submit" value="EDITAR CONDIMENTOS">
         </form>
       </div>
 	  <div>
-        <form action="card.php">
+        <form action="<?php echo $this->url ?>Cardapio">
            <input type="submit" value="ADICIONAR PRODUTO">
         </form>
       </div>
       <div>
-        <form action="card.php">
+        <form action="<?php echo $this->url ?>Cardapio">
            <input type="submit" value="ADICIONAR PRODUTO">
         </form>
       </div>
       <div>
-        <form action="card.php">
+        <form action="<?php echo $this->url ?>Cardapio">
            <input type="submit" value="ADICIONAR PRODUTO">
         </form>
       </div>
