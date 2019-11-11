@@ -1,23 +1,19 @@
 <?php
     $message = $data['msg'];
-    $card = $data['card'];
+    $clien = $data['clien'];
 ?>
 <div class="direita">
-		<h1 class="page-header">Editar Produto</h1>
+		<h1 class="page-header">Editar Cliente</h1>
 		<form role="form"  method="post">
             <div>
-				<label>Nome do Produto</label>
-                <input name="nome" value="<?php echo $card->getNome()?>">
+				<label>Nome do Cliente</label>
+                <input name="nome" value="<?php echo $clien->getNome()?>">
             </div>
             <div>
-				<label>Descrição</label>
-                <textarea name="descricao" rows="3"><?php echo $card->getDescricao()?></textarea>
+				<label>Endereço</label>
+                <textarea name="endereco" rows="3"><?php echo $clien->getEndereco()?></textarea>
             </div>
-			<div>
-				<label>Preço do Produto</label>
-                <input name="preco" type="number" value="<?php echo $card->getPreco()?>">
-            </div>
-            <input type="hidden" value="<?php echo $card->getIdcardapio() ?>" name="id">
+            <input type="hidden" value="<?php echo $clien->getIdcliente() ?>" name="id">
             <div class="form-group">
                 <input name="edit" type="submit" class="btn btn-primary" value="Salvar">
                 <input name="exit" type="submit" class="btn btn-danger" value="Cancelar">

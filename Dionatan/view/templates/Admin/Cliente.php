@@ -1,11 +1,39 @@
+<?php
+if($data){
+  $list_clien = $data['listClien'];
+}else{
+  $list_clien = null;
+}
+
+?>
  <div class="direita">
-	    <table border="1px" style="margin-top:15%;margin-bottom:15%; margin-left:40%;margin-right:40%;">
-		   <tr><th>id</th><th>Nome</th><th>Endereço</th><th>Deletar</th>
-		   <tr><td>1</td><td>Cliente01</td><td>Av. XY</td><td>Icon</td></tr>
-		   <tr><td>2</td><td>Cliente02</td><td>Av. XYZ</td><td>Icon</td></tr>
-		   <tr><td>3</td><td>Cliente03</td><td>Av. Harris</td><td>Icon</td></tr>
-		</table>
+   <h1>Administrar Clientes</h1>
+   <table>
+       <thead>
+           <tr>
+               <th>Id</th>
+               <th>Nome</th>
+               <th>Endereco</th>
+               <th colspan="2">Ações</th>
+           </tr>
+           </thead>
+           <tbody>
+               <?php $count = 0;?>
+               <?php if($list_clien):?>
+                   <?php foreach($list_clien as $clien): ?>
+                   <?php $count++; $ccs_class=($count%2==0)?'even':'odd';?>
+                       <tr class="<?php echo $ccs_class;?>">
+                           <td><?php echo $clien->getIdcliente();?></td>
+                           <td><?php echo $clien->getNome();?></td>
+                           <td><?php echo substr($clien->getEndereco(), 0,50);?></td>
+                           <td class="center"><a href="<?php echo $this->url?>ACliente/confiClien/<?php echo $clien->getIdcliente();?>">Deletar</a></td>
+                           <td class="center"><a href="<?php echo $this->url?>ACliente/editClien/<?php echo $clien->getIdcliente();?>">Editar</a></td>
+                       </tr>
+
+                   <?php endforeach;?>
+               <?php endif;?>
+           </tbody>
+   </table>
 	 </div>
 
-  </section>
   <div class="tam"></div>

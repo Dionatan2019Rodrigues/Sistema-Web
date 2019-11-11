@@ -96,7 +96,7 @@ $data['msg'] = '';
 if (filter_input(INPUT_POST, 'del')) {
     $idCardapio = filter_input(INPUT_POST,'id',FILTER_SANITIZE_STRING);
     if($this->model->removerCardapio($idCardapio)){
-        $data['msg'] ='Produto excluída com sucesso!';
+        $data['msg'] ='Produto excluído com sucesso!';
     }else{
         $data['msg'] ='Erro ao excluir produto!';
     }
