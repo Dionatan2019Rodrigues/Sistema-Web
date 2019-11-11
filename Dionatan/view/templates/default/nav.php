@@ -5,7 +5,7 @@
          <a href="<?php echo $this->url?>Login"><p>__</p>LOGIN </a>
          <a href="<?php echo $this->url?>Admin"><p>__</p>ADM </a>
          <a href="<?php echo $this->url?>Carrinho"><p>__</p>CARRINHO </a>
-         <a href="<?php echo $this->url?>Cardapio"><p>__</p>CARDÁPIO </a>
+         <a href="<?php echo $this->url?>Cardapiio"><p>__</p>CARDÁPIO </a>
          <a href="<?php echo $this->url ?>Home"><p>__</p>HOME </a>
 
     </nav>

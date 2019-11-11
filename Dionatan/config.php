@@ -14,7 +14,7 @@ $config->template = 'default';
 if ($_SERVER['HTTP_HOST'] == "localhost") {
     $config->dbuser = 'root'; //nomedoaluno
     $config->dbpassword = ''; //senha
-    $config->dbname = 'dado'; //nomedoaluno
+    $config->dbname = 'daw'; //nomedoaluno
     $config->dbhost = 'localhost'; //servidor (127.0.0.1)
     $config->dbdrive = 'mysql'; //servidor (127.0.0.1)
 } else {

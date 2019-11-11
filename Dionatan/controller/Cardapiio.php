@@ -1,11 +1,10 @@
 <?php
-class Aedit extends Controller{
+class Cardapiio extends Controller{
 
     private $texto;
 
     public function __construct() {
         parent::__construct();
-        $this->view->setTemplate('Admin');
 
     }
 
@@ -13,7 +12,7 @@ class Aedit extends Controller{
 
         $this->view->load('header');
         $this->view->load('nav');
-        $this->view->load('edit');
+        $this->view->load('card');
         $this->view->load('footer');
     }
 

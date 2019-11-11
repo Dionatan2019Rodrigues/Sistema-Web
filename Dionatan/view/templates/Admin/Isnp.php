@@ -1,11 +1,41 @@
+<?php
+$message = $data['msg'];
+?>
+
 <div class="direita">
-	    <form style="margin-top:15%;margin-bottom:15%;">
+		<h1>Inserir novo produto no cardápio</h1>
+		<form role="form"  method="post">
+          <div>
+              <input type="text" placeholder="Nome do Produto" name="nome">
+          </div>
+		  <p></p>
+          <div>
+              <textarea name="descricao" placeholder="Descrição do Produto" class="form-control" rows="3"></textarea>
+          </div>
+		  <p></p>
+		  <div>
+              <input name="preco" placeholder="Preço do Produto" type="number">
+          </div>
+		  <p></p>
+          <div>
+              <input name="add" type="submit" class="btn btn-primary" value="Cadastrar">
+          </div>
+          <?php if ($message): ?>
+              <div class="form-group">
+                  <div class="alert alert-danger">
+                      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                      <?php echo $message; ?>
+                  </div>
+              </div>
+          <?php endif; ?>
+      </form>
+	   <!-- <form style="margin-top:15%;margin-bottom:15%;">
 		  <input type="text" placeholder="Nome do Produto">
 		  <input type="file">
 		  <input type="number" placeholder="Preço">
 		  <input type="text" placeholder="Descrição" height="50px">
 		  <input type="submit" value="Inserir">
-		</form>
+		</form>-->
 	 </div>
 
   </section>
