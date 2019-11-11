@@ -48,14 +48,14 @@ class CardapioDAO extends Model {
         }
     }
 
-    /*public function removerNoticia($id) {
-        $sql = "DELETE FROM noticias WHERE id_not = :idnoticia";
-        if($this->ExecuteCommand($sql, [':idnoticia'=>$id])){
+    public function removerCardapio($id) {
+        $sql = "DELETE FROM cardapios WHERE id_cod = :id_cod";
+        if($this->ExecuteCommand($sql, [':id_cod'=>$id])){
             return true;
         }else{
             return false;
         }
-    }*/
+    }
 
     public function editcardapio($card) {
 

@@ -5,7 +5,7 @@ class ACardp extends Admin{
 
     public function __construct() {
         parent::__construct();
-		
+
         $this->model = new CardapioDAO();
 
     }
@@ -17,7 +17,7 @@ class ACardp extends Admin{
         $this->view->load('Cardp', $data);
         $this->view->load('footer');
     }
-	
+
     public function addCard() {
 
         $data['msg']="";
@@ -43,7 +43,7 @@ class ACardp extends Admin{
         $this->view->load('Isnp',$data);
         $this->view->load('footer');
     }
-	
+
 	public function editCard($id) {
     $data['card'] = $this->model->getCardapioById($id);
     $data['msg'] = "";
@@ -78,6 +78,46 @@ class ACardp extends Admin{
     $this->view->load('nav');
     $this->view->load('edit', $data);
     $this->view->load('footer');
+}
+
+public function confiCard($id) {
+    $data['msg'] = '';
+//        echo "Deletar Produto: $id";
+    $data['card'] = $this->model->getCardapioById($id);
+    $this->view->load('header');
+    $this->view->load('nav');
+    $this->view->load('confiCard', $data);
+    $this->view->load('footer');
+}
+
+public function removeCard() {
+
+$data['msg'] = '';
+if (filter_input(INPUT_POST, 'del')) {
+    $idCardapio = filter_input(INPUT_POST,'id',FILTER_SANITIZE_STRING);
+    if($this->model->removerCardapio($idCardapio)){
+        $data['msg'] ='Produto excluída com sucesso!';
+    }else{
+        $data['msg'] ='Erro ao excluir produto!';
+    }
+} elseif (filter_input(INPUT_POST, 'exit')) {
+
+    $data['listCard'] = $this->model->getListCardapios();
+
+    $this->view->load("header");
+    $this->view->load("nav");
+    $this->view->load("Cardp", $data);
+    $this->view->load("footer");
+    die();
+
+} else {
+    $data['msg'] = 'Erro no formulário!';
+}
+$this->view->load('header');
+$this->view->load('nav');
+$this->view->load('removeCard', $data);
+$this->view->load('footer');
+
 }
 
  /*public function imprimir($texto = null) {

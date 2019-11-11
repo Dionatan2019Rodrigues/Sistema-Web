@@ -25,6 +25,13 @@ p {
   text-align : center ;
   color : #1a1a1a ;
 }
+#margin{
+  margin-top: 10px;
+  border-style: solid;
+  border-color: black;
+  width: 500px;
+  height: 400px;
+}
 #footer{
   color: white;
   margin-top: 10px;

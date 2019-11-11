@@ -4,8 +4,9 @@
 
    <div class="tam"></div>
 
-   <section>
-      <img src="<?php echo $this->asset ?>img/jogo.png" width="100%" alt =""/>
+   <section id="margin">
+      <canvas id="canvas" width="500" height="400"></canvas>
+      <!--<img src="<?php echo $this->asset ?>img/jogo.png" width="100%" alt =""/>-->
    </section>
 
    <div class="tam"></div>

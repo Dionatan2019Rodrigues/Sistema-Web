@@ -41,8 +41,8 @@ if($data){
                             <td><?php echo $card->getNome();?></td>
                             <td><?php echo substr($card->getDescricao(), 0,50);?></td>
 							<td><?php echo $card->getPreco();?></td>
-                            <td class="center"><a href="<?php echo $this->url?>ACardp/confiCard/<?php echo $card->getIdcardapio();?>"><i class="fa fa-trash">Deletar</i></a></td>
-                            <td class="center"><a href="<?php echo $this->url?>ACardp/editCard/<?php echo $card->getIdcardapio();?>"><i class="fa fa-edit">Editar</i></a></td>
+                            <td class="center"><a href="<?php echo $this->url?>ACardp/confiCard/<?php echo $card->getIdcardapio();?>">Deletar</a></td>
+                            <td class="center"><a href="<?php echo $this->url?>ACardp/editCard/<?php echo $card->getIdcardapio();?>">Editar</a></td>
                         </tr>
 
                     <?php endforeach;?>

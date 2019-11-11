@@ -40,5 +40,4 @@
 		</form>-->
 	 </div>
 
-  </section>
   <div class="tam"></div>
