@@ -35,5 +35,5 @@ if($data){
            </tbody>
    </table>
 	 </div>
-
-  <div class="tam"></div>
+</section>
+<div class="tam"></div>

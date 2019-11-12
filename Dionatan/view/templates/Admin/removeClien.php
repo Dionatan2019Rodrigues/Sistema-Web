@@ -29,4 +29,5 @@ if ($data) {
             </div>
         </div>
   </div>
-        <div class="tam"></div>
+</section>
+<div class="tam"></div>

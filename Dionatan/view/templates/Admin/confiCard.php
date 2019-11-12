@@ -45,4 +45,5 @@ if ($data) {
          <?php endif; ?>
       </div>
 </div>
-      <div class="tam"></div>
+</section>
+<div class="tam"></div>

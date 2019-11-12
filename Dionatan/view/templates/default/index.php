@@ -3,8 +3,9 @@
    </section>
 
    <div class="tam"></div>
-
+   <h2>Área do jogo</h2>
    <section id="margin">
+
       <canvas id="canvas" width="500" height="400"></canvas>
       <!--<img src="<?php echo $this->asset ?>img/jogo.png" width="100%" alt =""/>-->
    </section>
