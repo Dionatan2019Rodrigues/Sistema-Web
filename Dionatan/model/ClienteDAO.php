@@ -13,7 +13,7 @@ class ClienteDAO extends Model {
         $sql = "SELECT * FROM cliente";
         $result = $this->ExecuteQuery($sql, []);
         foreach ($result as $linha) {
-            $cliente = new Cliiente($linha['nome'], $linha['endereco'], $linha['id_cli']);
+            $cliente = new Cliiente($linha['nome'], $linha['endereco'], $linha['senha'], $linha['id_cli']);
 
             $this->listClientes[] = $cliente;
         }
@@ -27,19 +27,19 @@ class ClienteDAO extends Model {
         if ($result) {
 
             $clien = $result[0];
-            return new Cliiente($clien['nome'], $clien['endereco'],  $clien['id_cli']);
+            return new Cliiente($clien['nome'], $clien['endereco'], $clien['senha'],  $clien['id_cli']);
         } else {
             return null;
         }
     }
 
-
     public function insereCliente($clien) {
-        $sql = "INSERT INTO cliente(id_cli,nome,endereco) VALUES(:id_cli,:nome,:endereco)";
+        $sql = "INSERT INTO cliente(id_cli,nome,endereco,senha) VALUES(:id_cli,:nome,:endereco,:senha)";
         $result = $this->ExecuteCommand($sql,
                 [':id_cli' => $clien->getIdcliente(),
                 ':nome' => $clien->getNome(),
-                ':endereco' => $clien->getEndereco(),]);
+                ':endereco' => $clien->getEndereco(),
+                ':senha' => $clien->getSenha(),]);
         if ($result) {
             return true;
         } else {
@@ -58,10 +58,11 @@ class ClienteDAO extends Model {
 
     public function editcliente($clien) {
 
-    $sql = "UPDATE cliente SET nome = :nome, endereco = :endereco WHERE id_cli = :id_cli";
+    $sql = "UPDATE cliente SET nome = :nome, endereco = :endereco, senha = :senha WHERE id_cli = :id_cli";
 
     $param=[':nome'=>$clien->getNome(),
             ':endereco'=>$clien->getEndereco(),
+            ':senha'=>$clien->getSenha(),
             ':id_cli'=>$clien->getIdcliente()];
 
     if($this->ExecuteCommand($sql, $param)){

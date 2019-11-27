@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <html  lang = " en "  dir = " ltr ">
   <head>
     <meta  charset = " utf-8 ">
@@ -23,13 +26,48 @@
 		<input type="submit" value="Entrar">
 	 </form>
 
-  </section>
 
-  </div>
-  <footer>
-    <div style="height:20px;"></div>
-     <p id="footer"> Realizado por Dionatan Rodrigues | 55 55 98426-8328 </p>
-     <p id="footer"> Email para contato | dionatanrodrigues351@gmail.com </p>
-  </footer>
-  </body>
-</html>
+
+<?php
+/*  if(isset($_SESSION['nao_autenticado'])):*/
+ ?><!--
+ <div>
+   <p>ERRO: Usuário ou senha inválido!</p>
+ </div>-->
+ <?php
+  /* endif;
+   unset($_SESSION['nao_autenticado']);*/
+?>
+<!--<form action="<?php echo $this->url ?>login02" method="post" style="margin-top:18%;margin-bottom:18%; margin-left:30%;margin-right:30%;">
+  <input type="text" name="loog" placeholder="Login">
+  <input type="text" name="seen" placeholder="Senha">
+  <input type="submit" value="Entrar">
+</form>
+
+</section>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php  ?>

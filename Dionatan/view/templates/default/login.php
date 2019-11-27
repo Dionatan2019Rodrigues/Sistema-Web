@@ -7,7 +7,8 @@
           <input type="password" name="senha" placeholder="Senha"/>
           <input id="face"type="submit" value="Facebook"/>
           <input id="gm"type="submit" value="Email"/>
-          <input type="submit" value="Login"/>
+          <a href="<?php echo $this->url?>Login/Loog/<?php echo $clien->getIdcliente();?>">Deletar</a>
+
         </form>
       </div>
     </div>

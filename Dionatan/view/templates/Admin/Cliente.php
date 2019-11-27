@@ -14,6 +14,7 @@ if($data){
                <th>Id</th>
                <th>Nome</th>
                <th>Endereco</th>
+               <th>Senha</th>
                <th colspan="2">Ações</th>
            </tr>
            </thead>
@@ -26,6 +27,7 @@ if($data){
                            <td><?php echo $clien->getIdcliente();?></td>
                            <td><?php echo $clien->getNome();?></td>
                            <td><?php echo substr($clien->getEndereco(), 0,50);?></td>
+                           <td><?php echo $clien->getSenha();?></td>
                            <td class="center"><a href="<?php echo $this->url?>ACliente/confiClien/<?php echo $clien->getIdcliente();?>">Deletar</a></td>
                            <td class="center"><a href="<?php echo $this->url?>ACliente/editClien/<?php echo $clien->getIdcliente();?>">Editar</a></td>
                        </tr>

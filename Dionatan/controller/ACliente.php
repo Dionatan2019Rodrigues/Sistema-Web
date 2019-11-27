@@ -24,10 +24,11 @@ class ACliente extends Admin{
         if (filter_input(INPUT_POST, 'add')) {
             $nome = filter_input(INPUT_POST, 'nome',FILTER_SANITIZE_STRING);
             $endereco = filter_input(INPUT_POST, 'endereco',FILTER_SANITIZE_STRING);
+            $senha = filter_input(INPUT_POST, 'senha',FILTER_SANITIZE_STRING);
 
             //var_dump($_POST);die;
-            if($nome && $endereco) {
-                if($this->model->insereCliente(new Cliiente($nome,$endereco))){
+            if($nome && $endereco && $senha) {
+                if($this->model->insereCliente(new Cliiente($nome,$endereco,$senha))){
                     $this->view->location('ACliente');
                 }else{
                     $data['msg']= "Erro ao cadastrar!!";

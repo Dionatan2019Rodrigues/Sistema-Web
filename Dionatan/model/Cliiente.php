@@ -5,11 +5,13 @@ class Cliiente extends Model {
 
     private $nome;
     private $endereco;
+    private $senha;
     private $idcliente;
 
-    public function __construct($nome, $endereco,$idcliente=null) {
+    public function __construct($nome, $endereco,$senha,$idcliente=null) {
         $this->nome = $nome;
         $this->endereco = $endereco;
+        $this->senha = $senha;
         $this->idcliente = $idcliente;
     }
 
@@ -17,8 +19,12 @@ class Cliiente extends Model {
         return $this->nome;
     }
 
-	function getEndereco() {
-        return $this->endereco;
+    function getEndereco() {
+          return $this->endereco;
+    }
+
+    function getSenha() {
+            return $this->senha;
     }
 
     function getIdcliente() {
@@ -31,6 +37,10 @@ class Cliiente extends Model {
 
     function setEndereco($endereco) {
         $this->endereco = $endereco;
+    }
+
+    function setSenha($senha) {
+        $this->senha = $senha;
     }
 
     function setIdcliente($idcliente) {

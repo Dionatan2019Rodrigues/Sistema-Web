@@ -13,6 +13,10 @@ $message = $data['msg'];
               <textarea name="endereco" placeholder="Endereço do Cliente" class="form-control" rows="3"></textarea>
           </div>
 		  <p></p>
+		     	<div>
+					      <textarea name="senha" placeholder="Senha do Cliente" class="form-control" rows="3"></textarea>
+			    </div>
+	    <p></p>
           <div>
               <input name="add" type="submit" class="btn btn-primary" value="Cadastrar">
           </div>

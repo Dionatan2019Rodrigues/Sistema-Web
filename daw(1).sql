@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 12-Nov-2019 às 00:05
+-- Tempo de geração: 27-Nov-2019 às 18:38
 -- Versão do servidor: 10.3.15-MariaDB
 -- versão do PHP: 7.3.6
 
@@ -53,6 +53,7 @@ INSERT INTO `cardapios` (`id_cod`, `nome`, `descricao`, `preco`) VALUES
 CREATE TABLE `cliente` (
   `id_cli` int(11) NOT NULL,
   `nome` varchar(200) NOT NULL,
+  `senha` varchar(200) NOT NULL,
   `endereco` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -60,9 +61,10 @@ CREATE TABLE `cliente` (
 -- Extraindo dados da tabela `cliente`
 --
 
-INSERT INTO `cliente` (`id_cli`, `nome`, `endereco`) VALUES
-(1, 'dionatan', 'wilson'),
-(3, 'rodrigo', 'livramento');
+INSERT INTO `cliente` (`id_cli`, `nome`, `senha`, `endereco`) VALUES
+(5, 'szdfasf', 'sfsdf', 'dsfdfds'),
+(6, 'Dionatan', '1236\r\n', 'Rodrigues'),
+(7, 'Medina', '554433\r\n', 'fraco');
 
 --
 -- Índices para tabelas despejadas
@@ -94,7 +96,7 @@ ALTER TABLE `cardapios`
 -- AUTO_INCREMENT de tabela `cliente`
 --
 ALTER TABLE `cliente`
-  MODIFY `id_cli` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_cli` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

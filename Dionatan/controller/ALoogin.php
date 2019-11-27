@@ -12,6 +12,7 @@ class ALoogin extends Controller{
     public function index(){
 
         $this->view->load('loogin');
+        $this->view->load('footer');
     }
 
  public function imprimir($texto = null) {
